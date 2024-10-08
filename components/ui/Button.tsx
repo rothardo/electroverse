@@ -5,6 +5,7 @@ interface IProps {
   type?: "button" | "reset" | "submit";
   disabled?: boolean;
   onClick?: () => void;
+  className?: string;
 }
 
 const Button = ({
@@ -12,6 +13,7 @@ const Button = ({
   onClick,
   type = "button",
   disabled = false,
+  className,
 }: IProps) => {
   return (
     <button
@@ -21,7 +23,7 @@ const Button = ({
         disabled
           ? "cursor-default bg-gray-300"
           : "hover:bg-gray-200 active:bg-gray-300"
-      }`}
+      } ${className}`}
       onClick={onClick}
     >
       {text}
