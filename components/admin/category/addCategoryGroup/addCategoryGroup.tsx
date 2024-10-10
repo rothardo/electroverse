@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import { TGetAllCategories, addCategory } from "@/actions/category/category";
 import Popup from "@/components/ui/Popup";
-import GroupCategory from "@/components/admin/forms/groupCategory";
+import GroupCategory from "@/components/admin/forms/groupCategoryform";
 
 interface IProps {
   onReset: () => void;

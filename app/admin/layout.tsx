@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import styles from "./layout.module.scss";
 import AdminSidebar from "@/components/admin/Sidebar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";

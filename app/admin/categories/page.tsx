@@ -1,12 +1,11 @@
 "use client";
-import styles from "./adminCategories.module.scss";
 
-import CatGroupRow from "@/components/admin/category/rowGroup";
+import CatGroupRow from "@/components/admin/category/rowGroup/rowGroup";
 import {
   TGetAllCategories,
   getAllCategories,
 } from "@/actions/category/category";
-import AddCategoryGroup from "@/components/admin/category/addCategoryGroup";
+import AddCategoryGroup from "@/components/admin/category/addCategoryGroup/addCategoryGroup";
 import { useEffect, useState } from "react";
 
 const Categories = () => {
