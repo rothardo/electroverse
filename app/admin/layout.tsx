@@ -14,13 +14,14 @@ const AdminLayout = async ({ children }: { children: React.ReactNode }) => {
     redirect("/");
   }
   return (
-    <div className={styles.adminLayout}>
+    <div className="flex min-h-screen">
       <AdminSidebar />
-      <div className={styles.rightCol}>
-        <h1>Page Name</h1>
+      <div className="w-full p-8">
+        <h1 className="w-full block text-gray-300 text-2xl font-light pb-4 mb-2 border-b border-gray-400">Page Name</h1>
         {children}
       </div>
     </div>
+
   );
 };
 
