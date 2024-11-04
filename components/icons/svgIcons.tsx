@@ -3,6 +3,7 @@ interface IProps {
   fill?: string;
   stroke?: string;
   strokeWidth?: number;
+  classname?: string;
 }
 
 type SVGProperties = {
